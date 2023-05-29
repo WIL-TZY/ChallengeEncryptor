@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="./src/img/logo-alura.svg"
+        alt="Logo da Alura"
+        title="logo"
+      />
+    </header>
+
+    <main>
+      <form id="form">
+
+        <div class="input">
+          <h1>Online Decoder</h1>
+          <h2>Write some text, choose an option below and see the magic happen.</h2>
+          <p id="error" class="error-message"></p>
+          <textarea
+            cols="10"
+            rows="8"
+            required
+            placeholder="Enter your text"
+            spellcheck="false"
+            class="textarea"
+            id="text-to-transform"
+          ></textarea>
+          <p id="note">Only lower case letters are accepted.</p>
+        </div>
+        <!-- End of input div -->
+
+        <div class="buttons-div">
+          <input
+            type="submit"
+            value="Encrypt"
+            class="button-style button-1"
+            id="option1"
+            onclick="buttonEncrypt()"
+          />
+          <input
+            type="submit"
+            value="Decrypt"
+            class="button-style button-2"
+            id="option2"
+            onclick="buttonDecrypt()"
+          />
+        </div>
+        <!-- End of buttons div -->
+      </form>
+
+      <aside class="right-sidebar" id="right-sidebar">
+        <img
+          id="chara-img"
+          class="character"
+          src="./src/img/character-sidebar.svg"
+          alt="An illustration of a boy holding a magnifying glass"
+          title="image"
+        />
+        <h2 id="overwritten">No message found.</h2>
+        <div class="box" id="box">
+          <p id="old-text">
+            Enter text that you want to encrypt or decrypt.
+          </p>
+          <p id="new-text"></p>
+        </div>
+        <!-- End of box div -->
+        <div class="buttons-div">
+          <input
+            type="submit"
+            value="Copy"
+            class="button-style button-3"
+            id="option3"
+          /> <!-- style="display: none" --> 
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Created by willowitzy for the Decoder Challenge - Oracle ONE
+      </p>
+
+      <p>
+        DISCLAIMER: The images used on this site were made by Oracle graphic designers and made available for use in the challenge.
+      </p>
+    </footer>
+    <!-- 
+      Placing the <script> tag right at the bottom 
+      of the body tag assures the HTML elements 
+      will have already been loaded and will be 
+      accessible to the JS code.
+    -->
+    <script defer src="index.js"></script>
+  </body>
+</html>

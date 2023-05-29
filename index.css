@@ -1,0 +1,254 @@
+
+:root {
+    --color-primary: #0A3871;
+    /* --color-secondary:  */
+    --color-light-gray: #7b7f83;
+    --color-gray: #343A40;
+    --color-link-selected: #D8DFE8;
+    --color-background: #f3f5fc;
+    --font-size-normal: 16px;
+    --font-size-h2: 24px;
+    --font-size-h1: 32px;
+  }
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url('./src/font/static/Inter-Regular.ttf') format('ttf');
+  }
+
+body{
+    background-color: var(--color-background);
+    line-height: 150%; /* vertical font spacing */
+}
+
+header{
+  margin-bottom: 2em;
+}
+
+.logo{
+  padding: 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* Aligns the items to the top */
+    align-items: flex-start;
+    font-family: 'inter-regular', sans-serif;
+    font-size: var(font-size-normal);
+    /* top, right, bottom, and left */
+    margin: 0 0 3em 2em;
+  }
+
+h1{
+    color: var(--color-primary);
+    font-size: var(--font-size-h1);
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+h2{
+  color: var(--color-primary);
+  font-size: var(--font-size-h2);
+  margin-bottom: 5%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2em;
+    width: 50%;
+}
+
+.input{
+    width: 800px;
+}
+
+input[type="submit"] {
+    font-size: 17px;
+  }
+  
+.input h1{
+    color: var(--color-primary);
+    line-height: 150%;
+}
+
+.input p {
+    margin: 1em 0;
+    text-align: left;
+    color: var(--color-light-gray);
+}
+
+#note {
+    line-height: 1.5;
+  }
+  
+  /* Exclamation mark */
+  #note:before {
+    content: url("./src/img/bi_exclamation-circle-fill.png");
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+.right-sidebar {
+    background-color: #FFFFFF;
+    /* background-image: url("./src/img/boneco-lateral.svg"); */
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    border: none;
+    border-radius: 30px;
+    margin-left: 6em;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(158, 158, 158, 0.1);
+    /* position: fixed; */
+}
+
+.right-sidebar h2{
+    text-align: center;
+    color: var(--color-gray);
+    margin: 0.3em 2em;
+}
+
+.right-sidebar p{
+    text-align: center;
+    color: var(--color-light-gray);
+    margin: 0.3em 2em;
+}
+
+.buttons-div{
+    display: flex;
+    margin-top: auto; 
+}
+
+.button-style:not(.button-3) {
+    /* CSS styles for all buttons except button-3 */
+    border: 1px solid var(--color-primary);
+    border-radius: 24px;
+    padding: 1.3em 7em;
+    margin: 0.5em 1em;
+    cursor: pointer;
+}
+
+.button-style.button-1 {
+    /* CSS styles for the first button */
+    color: #FFFFFF;
+    background-color: var(--color-primary);
+}
+
+.button-style.button-2 {
+    /* CSS styles for the second button */
+    color: var(--color-primary);
+    background-color: #FFFFFF;
+}
+
+.button-style.button-3 {
+    /* CSS styles for the third button */
+    /* display: block; */ /* Javascript file is already setting the display */
+    display: none;
+    color: var(--color-primary);
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 2em;
+    border: 1px solid var(--color-primary);
+    border-radius: 24px;
+    padding: 1.3em 7em;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background: var(--color-link-selected);
+    transform: scale(1.09);
+  }
+
+  .button-style.button-1:hover {
+    background: #000000;
+    opacity: 80%;
+    transform: scale(1.09);
+  }
+
+.textarea {
+    background-color: var(--color-background);
+    width: 100%;
+     /* Allow vertical resizing of the textarea */
+    resize: vertical;
+    padding: 5%;
+    font-size: var(--font-size-h1);
+    border: none;
+    border-radius: 15px;
+    text-transform: lowercase;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.textarea::placeholder {
+    color: var(--color-light-gray);
+    font-style: italic;
+    font-size: var(--font-size-h1);
+  }
+
+  textarea:focus {
+    outline: none;
+    /* border-color: #000000; */
+  }
+  
+  /* Custom scrollbar */
+  textarea::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: var(--color-light-gray);
+    border-radius: 2px;
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+    /* background-color: #cccccc; */
+  }
+
+  /* Error message */
+  .input .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  #new-text{
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--color-primary);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+footer{
+    color: var(--color-light-gray);
+    font-size: small;
+    padding: 1em;
+    text-align: center;
+    width: auto;
+}
+
+footer p {
+    padding: 0.2em;
+}
+
+  /* ------------------ RESPONSIVE DESIGN ------------------ */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .right-sidebar{
+        margin-top: 3em;
+        width: 100%;
+    }
+}
