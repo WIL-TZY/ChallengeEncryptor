@@ -6,6 +6,12 @@
 </div>
 
 <div align="center">
+
+This is a small word encoding system that turns vowels into words, making the message difficult to read.   
+On the deployed site it is also possible to decode a previously encrypted message, making it intelligible again.
+</div>
+
+<div align="center">
   
 [![Status](https://shields.io/badge/Technology%20Used-|%20HTML%205%20|%20CSS%203%20|%20JavaScript%20|-blue)](https://github.com/euclides981/criptografia#readme) 
 [![View Deployment](https://shields.io/badge/View-Deployment-purple.svg)](https://naelitoh.github.io/challenge-encryptor) [![View Challenge](https://shields.io/badge/View-Challenge-green.svg)](https://github.com/topics/challengeonedecodificador5) 
@@ -29,7 +35,7 @@ ___
 
 <div align="center">
   
-### :lock: Requisitos :unlock:
+### :lock: Requirements :unlock:
 
 Only works with lowercase letters.    
 Accented letters or special characters should not be used.
