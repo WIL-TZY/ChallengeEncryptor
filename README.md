@@ -12,9 +12,9 @@ On the deployed site it is also possible to decode a previously encrypted messag
 </div>
 
 <div align="center">
-  
+
 [![Status](https://shields.io/badge/Technology%20Used-|%20HTML%205%20|%20CSS%203%20|%20JavaScript%20|-blue)](https://github.com/euclides981/criptografia#readme) 
-[![View Deployment](https://shields.io/badge/View-Deployment-purple.svg)](https://willowitzy.github.io/challenge-encryptor) [![View Challenge](https://shields.io/badge/View-Challenge-green.svg)](https://github.com/topics/challengeonedecodificador5) 
+[![View Deployment](https://shields.io/badge/View-Deployment-purple.svg)](https://willowitzy.github.io/challengeEncryptor) [![View Challenge](https://shields.io/badge/View-Challenge-green.svg)](https://github.com/topics/challengeonedecodificador5) 
 </div>
 
 ___
